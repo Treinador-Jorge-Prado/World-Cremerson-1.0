@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impossible | The Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; font-family: 'Orbitron', sans-serif; }
+        .neon-border { box-shadow: 0 0 15px #00ff96, inset 0 0 5px #00ff96; border: 1px solid #00ff96; }
+        .bg-grid { background-image: radial-gradient(#1a1a1a 1px, transparent 1px); background-size: 30px 30px; }
+    </style>
+</head>
+<body class="text-white bg-grid min-h-screen flex flex-col items-center">
+
+    <header class="w-full p-8 flex justify-between items-center max-w-6xl">
+        <h1 class="text-3xl font-bold tracking-widest text-green-400 italic">WORLD CREMERSON</h1>
+        <div class="space-x-6 text-sm">
+            <a href="#sobre" class="hover:text-green-400 transition">SOBRE</a>
+            <a href="#controles" class="hover:text-green-400 transition">CONTROLES</a>
+        </div>
+    </header>
+
+    <main class="flex flex-col items-center mt-12 px-4">
+        <div class="text-center mb-8">
+            <span class="text-green-500 text-sm tracking-[0.3em] uppercase">Desafio Indie</span>
+            <h2 class="text-5xl md:text-7xl font-black mt-2 mb-6">VOCÊ CONSEGUE?</h2>
+            <p class="text-gray-400 max-w-lg mx-auto">Um teste de reflexos puro e paciência. Termine a fase com as quatro vidas.</p>
+        </div>
+
+        <a href="play/index.html" class="neon-border bg-transparent px-12 py-4 text-xl font-bold hover:bg-green-400 hover:text-black transition-all duration-300 transform hover:scale-105">
+            JOGAR AGORA
+        </a>
+
+        <div class="mt-16 w-full max-w-4xl opacity-50 grayscale hover:grayscale-0 transition duration-700">
+            <div class="bg-gray-900 aspect-video rounded-lg flex items-center justify-center border border-gray-800">
+                <p class="text-gray-600 italic">[ Inserir Screenshot do Jogo Aqui ]</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="controles" class="my-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl text-center">
+        <div class="p-6 bg-zinc-900/50 rounded-xl border border-white/5">
+            <h3 class="text-green-400 mb-2">MOVIMENTO</h3>
+            <p class="text-sm text-gray-500">Setas do teclado</p>
+        </div>
+        <div class="p-6 bg-zinc-900/50 rounded-xl border border-white/5">
+            <h3 class="text-green-400 mb-2">AÇÃO</h3>
+            <p class="text-sm text-gray-500">Seta para cima pula</p>
+        </div>
+        <div class="p-6 bg-zinc-900/50 rounded-xl border border-white/5">
+            <h3 class="text-green-400 mb-2">RESTART</h3>
+            <p class="text-sm text-gray-500">Quando morrer</p>
+        </div>
+    </section>
+
+    <footer class="mt-auto py-8 text-gray-600 text-xs">
+        &copy; 2026 IMPOSSIBLE STUDIO | CRIADO POR JF.
+    </footer>
+
+</body>
+</html>
